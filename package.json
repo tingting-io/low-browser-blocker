@@ -1,0 +1,6 @@
+{
+    "name": "low-browser-blocker",
+    "main": "low-browser-blocker.js",
+    "license": "MIT",
+    "flat": true
+}
