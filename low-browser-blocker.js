@@ -21,7 +21,7 @@
         div4.style.marginTop = "20px";
         div4.style.color = "#999";
         div.innerHTML = `Your browser is not supported by our website`;
-        div2.innerHTML = `Please use the latest <a href="https://www.google.com/chrome/browser/desktop/">Chrome</a> or Safari to visit us`;
+        div2.innerHTML = `Please use the latest <a style="display: inline; text-decoration: underline; color: blue;" href="https://www.google.com/chrome/browser/desktop/">Chrome</a> or Safari to visit us`;
         div3.innerHTML = `The reason we don't support your browser is that we are a small startup company`;
         div4.innerHTML = `and we have to invest our very limited development resource into the best browsers`;
         td.appendChild(div);
