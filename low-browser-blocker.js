@@ -12,13 +12,13 @@
         td.style.verticalAlign = "middle";
         td.style.textAlign = "center";
         div.style.fontSize = "36px";
-        div2.style.fontSize = "24px";
-        div2.style.marginTop = "20px";
+        div2.style.fontSize = "36px";
+        div2.style.marginTop = "30px";
         div3.style.fontSize = "16px";
-        div3.style.marginTop = "20px";
+        div3.style.marginTop = "30px";
         div3.style.color = "#999";
         div4.style.fontSize = "16px";
-        div4.style.marginTop = "20px";
+        div4.style.marginTop = "30px";
         div4.style.color = "#999";
         div.innerHTML = `Your browser is not supported by our website`;
         div2.innerHTML = `Please use the latest <a style="display: inline; text-decoration: underline; color: blue;" href="https://www.google.com/chrome/browser/desktop/">Chrome</a> or Safari to visit us`;
