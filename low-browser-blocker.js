@@ -1,5 +1,8 @@
 (function() {
-    if (window.fetch && window.customElements && 'import' in document.createElement('link') && 'content' in document.createElement('template')) {
+    const ua = window.navigator.userAgent;
+    if (ua.includes('googlebot') || ua.includes('bingbot')) {
+        document.body.innerHTML = "Make comments to anything. See comments from everybody.";
+    } else if (window.fetch && window.customElements && 'import' in document.createElement('link') && 'content' in document.createElement('template')) {
         //
     } else {
         var div = document.createElement("div");
