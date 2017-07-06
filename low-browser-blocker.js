@@ -1,8 +1,12 @@
 (function() {
     const ua = window.navigator.userAgent;
+    const detectFetch = window.fetch;
+    const detectCustomElements = window.customElements;
+    const detectHTMLImport = true || 'import' in document.createElement('link');
+    const detectTemplate = 'content' in document.createElement('template');
     if (ua.includes('googlebot') || ua.includes('bingbot')) {
         document.body.innerHTML = "Make comments to anything. See comments from everybody.";
-    } else if (window.fetch && window.customElements && 'import' in document.createElement('link') && 'content' in document.createElement('template')) {
+    } else if (detectFetch && detectCustomElements && detectHTMLImport && detectTemplate) {
         //
     } else {
         var div = document.createElement("div");
