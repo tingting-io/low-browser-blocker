@@ -1,6 +1,12 @@
 {
     "name": "low-browser-blocker",
-    "main": "low-browser-blocker.js",
+    "main": "min/low-browser-blocker.js",
     "license": "MIT",
-    "flat": true
+    "flat": true,
+    "scripts": {
+        "init": "npm run dev:install:uglify-es",
+        "init:uglify-es": "npm install -g uglify-es",
+        "build": "npm run build:uglify-es",
+        "build:uglify-es": "uglifyjs src/low-browser-blocker.js -c -m -o min/low-browser-blocker.js"
+    }
 }
